@@ -61,7 +61,7 @@ bool ALogger::openFile(FString msg){
 	}
 	stop();
 	logfile.open(file);
-	return true;
+	return isLogging();
 }
 
 void ALogger::stop(){
