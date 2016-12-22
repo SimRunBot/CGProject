@@ -28,6 +28,12 @@ public:
 
 	
 	UFUNCTION(BlueprintCallable, Category="Logger")
+	bool isLogging();
+
+	UFUNCTION(BlueprintCallable, Category="Logger")
+	FString getHomeDir();
+
+	UFUNCTION(BlueprintCallable, Category="Logger")
 	bool openFile(FString msg);
 
 	UFUNCTION(BlueprintCallable, Category="Logger")
